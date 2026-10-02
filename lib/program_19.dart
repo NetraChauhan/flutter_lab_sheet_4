@@ -17,5 +17,5 @@ class _S extends State<Input>{
 class Sum extends StatelessWidget{
  final double a,b;
  const Sum(this.a,this.b,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Sum')),body:Center(child:Container(padding:const EdgeInsets.all(24),decoration:BoxDecoration(color:Colors.green.shade50,borderRadius:BorderRadius.circular(18)),child:Text('$a + $b = ${a+b}',style:const TextStyle(fontSize:28,fontWeight:FontWeight.bold)))));
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Sum')),body:Align(alignment:Alignment.topCenter,child:Container(padding:const EdgeInsets.all(24),decoration:BoxDecoration(color:Colors.green.shade50,borderRadius:BorderRadius.circular(18)),child:Text('$a + $b = ${a+b}',style:const TextStyle(fontSize:28,fontWeight:FontWeight.bold)))));
 }
