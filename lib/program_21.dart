@@ -16,7 +16,7 @@ class Students extends StatelessWidget{
 class Detail extends StatelessWidget{
  final String name,roll,course;
  const Detail(this.name,this.roll,this.course,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Student Detail')),body:Center(child:Card(child:Padding(padding:const EdgeInsets.all(24),child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Student Detail')),body:Align(alignment:Alignment.topCenter,child:Card(child:Padding(padding:const EdgeInsets.all(24),child:Column(mainAxisSize:MainAxisSize.min,children:[
   CircleAvatar(radius:38,child:Text(name[0],style:const TextStyle(fontSize:25))),const SizedBox(height:10),Text(name,style:const TextStyle(fontSize:24,fontWeight:FontWeight.bold)),Text('Roll No: $roll'),Text('Course: $course')
  ])))));
 }
