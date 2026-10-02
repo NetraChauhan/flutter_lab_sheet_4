@@ -13,10 +13,10 @@ class Home extends StatelessWidget{
   ListTile(leading:const Icon(Icons.person),title:const Text('Profile'),onTap:()=>go(c,'Profile',Icons.person)),
   ListTile(leading:const Icon(Icons.book),title:const Text('Courses'),onTap:()=>go(c,'Courses',Icons.book)),
   ListTile(leading:const Icon(Icons.contact_mail),title:const Text('Contact'),onTap:()=>go(c,'Contact',Icons.contact_mail))
- ])),body:const Center(child:Text('Open the drawer and choose a screen',style:TextStyle(fontSize:20))));
+ ])),body:const Align(alignment:Alignment.topCenter,child:Text('Open the drawer and choose a screen',style:TextStyle(fontSize:20))));
 }
 class Screen extends StatelessWidget{
  final String title;final IconData icon;
  const Screen(this.title,this.icon,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:Text(title)),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(icon,size:70,color:Colors.red),Text('$title Screen',style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold))])));
+ Widget build(c)=>Scaffold(appBar:AppBar(title:Text(title)),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(icon,size:70,color:Colors.red),Text('$title Screen',style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold))])));
 }
