@@ -15,5 +15,5 @@ class First extends StatelessWidget{
 class Second extends StatelessWidget{
  final String name;
  const Second(this.name,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Received Data')),body:Center(child:Container(padding:const EdgeInsets.all(24),decoration:BoxDecoration(color:Colors.teal.shade50,borderRadius:BorderRadius.circular(18)),child:Column(mainAxisSize:MainAxisSize.min,children:[const Icon(Icons.person,size:58,color:Colors.teal),const Text('Student Name'),Text(name,style:const TextStyle(fontSize:26,fontWeight:FontWeight.bold))]))));
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Received Data')),body:Align(alignment:Alignment.topCenter,child:Container(padding:const EdgeInsets.all(24),decoration:BoxDecoration(color:Colors.teal.shade50,borderRadius:BorderRadius.circular(18)),child:Column(mainAxisSize:MainAxisSize.min,children:[const Icon(Icons.person,size:58,color:Colors.teal),const Text('Student Name'),Text(name,style:const TextStyle(fontSize:26,fontWeight:FontWeight.bold))]))));
 }
