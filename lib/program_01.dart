@@ -15,5 +15,5 @@ class First extends StatelessWidget{
 }
 class Second extends StatelessWidget{
  const Second({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Second Screen')),body:const Center(child:Text('You are on the Second Screen',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold))));
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Second Screen')),body:const Align(alignment:Alignment.topCenter,child:Text('You are on the Second Screen',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold))));
 }
