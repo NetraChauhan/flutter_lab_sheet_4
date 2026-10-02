@@ -12,5 +12,5 @@ class _S extends State<Home>{
   const DrawerHeader(decoration:BoxDecoration(color:Colors.teal),child:Column(crossAxisAlignment:CrossAxisAlignment.start,mainAxisAlignment:MainAxisAlignment.end,children:[Icon(Icons.school,color:Colors.white,size:42),Text('Student Menu',style:TextStyle(color:Colors.white,fontSize:22,fontWeight:FontWeight.bold))])),
   for(final x in [('Home',Icons.home),('Profile',Icons.person),('About',Icons.info),('Settings',Icons.settings)])
    ListTile(leading:Icon(x.$2),title:Text(x.$1),onTap:(){setState(()=>page=x.$1);Navigator.pop(c);})
- ]),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(page=='Home'?Icons.home:page=='Profile'?Icons.person:page=='About'?Icons.info:Icons.settings,size:70,color:Colors.teal),Text('$page Screen',style:const TextStyle(fontSize:26,fontWeight:FontWeight.bold))])));
+ ]),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(page=='Home'?Icons.home:page=='Profile'?Icons.person:page=='About'?Icons.info:Icons.settings,size:70,color:Colors.teal),Text('$page Screen',style:const TextStyle(fontSize:26,fontWeight:FontWeight.bold))])));
 }
