@@ -36,14 +36,14 @@ class Profile extends StatelessWidget{
 }
 class Attendance extends StatelessWidget{
  const Attendance({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Attendance')),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Attendance')),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   const Icon(Icons.calendar_month,size:70,color:Colors.green),const Text('92%',style:TextStyle(fontSize:42,fontWeight:FontWeight.bold)),const Text('Overall Attendance'),const SizedBox(height:12),
   Container(width:280,padding:const EdgeInsets.all(16),color:Colors.green.shade50,child:const Column(children:[Text('Flutter: 94%'),Text('Database: 90%'),Text('Networking: 92%')]))
  ])));
 }
 class Result extends StatelessWidget{
  const Result({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Result')),body:Center(child:Card(child:Padding(padding:const EdgeInsets.all(24),child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Result')),body:Align(alignment:Alignment.topCenter,child:Card(child:Padding(padding:const EdgeInsets.all(24),child:Column(mainAxisSize:MainAxisSize.min,children:[
   const Icon(Icons.emoji_events,size:65,color:Colors.amber),const Text('PASS',style:TextStyle(fontSize:30,fontWeight:FontWeight.bold,color:Colors.green)),const SizedBox(height:8),
   const Text('Total: 258 / 300'),const Text('Percentage: 86.00%'),const Text('Grade: A')
  ])))));
