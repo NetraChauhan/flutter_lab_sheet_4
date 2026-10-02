@@ -15,7 +15,7 @@ class Home extends StatelessWidget{
 class Detail extends StatelessWidget{
  final String name;final double price;
  const Detail(this.name,this.price,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Product Detail')),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Product Detail')),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   const Icon(Icons.shopping_bag,size:70,color:Colors.indigo),Text(name,style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold)),Text('Price: ₹${price.toStringAsFixed(0)}',style:const TextStyle(fontSize:20))
  ])));
 }
