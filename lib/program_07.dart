@@ -12,7 +12,7 @@ class First extends StatelessWidget{
 }
 class Second extends StatelessWidget{
  const Second({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Second Screen')),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Second Screen')),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   const Icon(Icons.keyboard_return,size:58,color:Colors.indigo),const SizedBox(height:12),
   const Text('Second Screen',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold)),const SizedBox(height:16),
   ElevatedButton.icon(onPressed:()=>Navigator.pop(c),icon:const Icon(Icons.arrow_back),label:const Text('Return to First Screen'))
