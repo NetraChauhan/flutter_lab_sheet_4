@@ -15,14 +15,14 @@ class Home extends StatelessWidget{
 }
 class Profile extends StatelessWidget{
  const Profile({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Profile')),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Profile')),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   const CircleAvatar(radius:42,child:Icon(Icons.person,size:45)),const SizedBox(height:12),const Text('Student Profile',style:TextStyle(fontSize:23,fontWeight:FontWeight.bold)),
   ElevatedButton(onPressed:()=>open(c,const Settings()),child:const Text('Open Settings'))
  ])));
 }
 class Settings extends StatelessWidget{
  const Settings({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Settings')),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Settings')),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   const Icon(Icons.settings,size:60,color:Colors.orange),const Text('Settings Screen',style:TextStyle(fontSize:23,fontWeight:FontWeight.bold)),
   ElevatedButton(onPressed:()=>open(c,const Profile()),child:const Text('Open Profile'))
  ])));
