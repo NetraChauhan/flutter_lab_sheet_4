@@ -14,7 +14,7 @@ class Home extends StatelessWidget{
 }
 class Profile extends StatelessWidget{
  const Profile({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Profile')),body:const Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Profile')),body:const Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   CircleAvatar(radius:46,child:Text('NC',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold))),SizedBox(height:12),
   Text('Netra Chauhan',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold)),Text('BCA • 5th Semester'),Text('COER University')
  ])));
