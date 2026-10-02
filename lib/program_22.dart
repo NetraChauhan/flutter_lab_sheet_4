@@ -16,14 +16,14 @@ class Login extends StatelessWidget{
 }
 class Home extends StatelessWidget{
  const Home({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Home'),centerTitle:true),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Home'),centerTitle:true),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   const Icon(Icons.home,size:68,color:Colors.blue),const Text('Welcome Home',style:TextStyle(fontSize:25,fontWeight:FontWeight.bold)),const SizedBox(height:16),
   ElevatedButton.icon(onPressed:()=>Navigator.push(c,MaterialPageRoute(builder:(_)=>const Profile())),icon:const Icon(Icons.person),label:const Text('Open Profile'))
  ])));
 }
 class Profile extends StatelessWidget{
  const Profile({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Profile')),body:const Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Profile')),body:const Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   CircleAvatar(radius:45,child:Text('NC',style:TextStyle(fontSize:24))),SizedBox(height:10),
   Text('Netra Chauhan',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold)),Text('BCA • 5th Semester'),Text('COER University')
  ])));
