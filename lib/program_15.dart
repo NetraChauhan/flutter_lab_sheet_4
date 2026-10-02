@@ -18,5 +18,5 @@ class Home extends StatelessWidget{
 class Info extends StatelessWidget{
  final String title,text;final IconData icon;
  const Info(this.title,this.icon,this.text,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:Text(title)),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(icon,size:70,color:Colors.purple),const SizedBox(height:10),Text(title,style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold)),const SizedBox(height:8),Text(text,textAlign:TextAlign.center,style:const TextStyle(fontSize:18))])));
+ Widget build(c)=>Scaffold(appBar:AppBar(title:Text(title)),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(icon,size:70,color:Colors.purple),const SizedBox(height:10),Text(title,style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold)),const SizedBox(height:8),Text(text,textAlign:TextAlign.center,style:const TextStyle(fontSize:18))])));
 }
