@@ -16,5 +16,5 @@ class _S extends State<FormPage>{
 class Display extends StatelessWidget{
  final String name;
  const Display(this.name,{super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Submitted Name')),body:Center(child:Column(mainAxisSize:MainAxisSize.min,children:[const Icon(Icons.check_circle,size:70,color:Colors.green),const Text('Student Name',style:TextStyle(fontSize:18)),Text(name,style:const TextStyle(fontSize:28,fontWeight:FontWeight.bold))])));
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Submitted Name')),body:Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[const Icon(Icons.check_circle,size:70,color:Colors.green),const Text('Student Name',style:TextStyle(fontSize:18)),Text(name,style:const TextStyle(fontSize:28,fontWeight:FontWeight.bold))])));
 }
