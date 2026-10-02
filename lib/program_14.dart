@@ -23,5 +23,5 @@ class _S extends State<Main>{
 class _P extends StatelessWidget{
  final IconData icon;final String title,text;
  const _P(this.icon,this.title,this.text);
- Widget build(c)=>Center(child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(icon,size:66,color:Colors.green),Text(title,style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold)),const SizedBox(height:6),Text(text)]));
+ Widget build(c)=>Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(icon,size:66,color:Colors.green),Text(title,style:const TextStyle(fontSize:25,fontWeight:FontWeight.bold)),const SizedBox(height:6),Text(text)]));
 }
