@@ -21,7 +21,7 @@ class _S extends State<Shop>{
 }
 class _Home extends StatelessWidget{
  const _Home();
- Widget build(c)=>Center(child:Column(mainAxisSize:MainAxisSize.min,children:[const Icon(Icons.storefront,size:78,color:Colors.deepOrange),const Text('Welcome to My Shop',style:TextStyle(fontSize:26,fontWeight:FontWeight.bold)),Text('Browse products and manage your cart',style:TextStyle(color:Colors.grey.shade700))]));
+ Widget build(c)=>Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[const Icon(Icons.storefront,size:78,color:Colors.deepOrange),const Text('Welcome to My Shop',style:TextStyle(fontSize:26,fontWeight:FontWeight.bold)),Text('Browse products and manage your cart',style:TextStyle(color:Colors.grey.shade700))]));
 }
 class _Products extends StatelessWidget{
  const _Products();
@@ -33,9 +33,9 @@ class _Products extends StatelessWidget{
 }
 class _Cart extends StatelessWidget{
  const _Cart();
- Widget build(c)=>const Center(child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(Icons.shopping_cart_outlined,size:72,color:Colors.deepOrange),Text('Your Cart',style:TextStyle(fontSize:25,fontWeight:FontWeight.bold)),Text('2 items • Total ₹4,498')]));
+ Widget build(c)=>const Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[Icon(Icons.shopping_cart_outlined,size:72,color:Colors.deepOrange),Text('Your Cart',style:TextStyle(fontSize:25,fontWeight:FontWeight.bold)),Text('2 items • Total ₹4,498')]));
 }
 class _Profile extends StatelessWidget{
  const _Profile();
- Widget build(c)=>const Center(child:Column(mainAxisSize:MainAxisSize.min,children:[CircleAvatar(radius:42,child:Text('NC')),SizedBox(height:10),Text('Netra Chauhan',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold)),Text('Shop Member')]));
+ Widget build(c)=>const Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[CircleAvatar(radius:42,child:Text('NC')),SizedBox(height:10),Text('Netra Chauhan',style:TextStyle(fontSize:24,fontWeight:FontWeight.bold)),Text('Shop Member')]));
 }
