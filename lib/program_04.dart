@@ -16,7 +16,7 @@ class Login extends StatelessWidget{
 }
 class Home extends StatelessWidget{
  const Home({super.key});
- Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Home')),body:const Center(child:Column(mainAxisSize:MainAxisSize.min,children:[
+ Widget build(c)=>Scaffold(appBar:AppBar(title:const Text('Home')),body:const Align(alignment:Alignment.topCenter,child:Column(mainAxisSize:MainAxisSize.min,children:[
   Icon(Icons.check_circle,size:72,color:Colors.green),Text('Login Successful!',style:TextStyle(fontSize:25,fontWeight:FontWeight.bold)),Text('Welcome to the Home Screen')
  ])));
 }
